@@ -1,0 +1,47 @@
+
+
+
+page-home {
+
+}
+
+
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 60%;
+    font-size: 0.5.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 0.4.0em;
+    position: absolute;
+    top: 78%;
+    width: 100%;
+    color: #fff;
+  }
+
+  .card-icon {
+  	position:absolute;
+  	width:25%;
+  	top:15%;
+  	left:37.5%;
+
+  }
+
+  .leaderboard-header {
+  background-color: #2076f8;
+  }
+
+  
+}
+
