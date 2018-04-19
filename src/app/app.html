@@ -1,0 +1,31 @@
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/arjuna_logo.png">
+        </ion-avatar>
+        <ion-title>ARJUNA</ion-title>
+      </ion-item>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          {{p.title}}
+        </button>
+      </ion-list>
+    </ion-content>
+
+    <ion-footer>
+      <ion-toolbar>
+        <ion-item style="background-color: black">
+          <img src="assets/imgs/copyright.png" >
+          <img src="assets/imgs/website.png">
+        </ion-item>
+      </ion-toolbar>
+    </ion-footer>
+
+  </ion-menu>
+  <ion-nav #content [root]="rootPage"></ion-nav>
