@@ -7,12 +7,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>learning-path</ion-title>
+    <ion-title>Learning-path</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content no-padding class="chapter-page" class="card-background-page">
+
+	<ion-grid>
+	<ion-row>
+		<ion-col col-6 col-md-4 col-sm-6 *ngFor="let item of chapters">
+			<ion-card (click)="openItem(item)">
+				<img [src]="item.image">
+				<div class="card-title">{{item.title}}</div>
+			</ion-card>
+		</ion-col>
+	</ion-row>	
+	</ion-grid>
 
 </ion-content>
