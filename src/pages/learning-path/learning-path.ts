@@ -19,11 +19,11 @@ export class LearningPathPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   	this.chapters = [
-  		{title:'chapter 1',image:'assets/imgs/chapter1.jpg'},
-  		{title:'chapter 2',image:'assets/imgs/chapter2.jpg'},
-  		{title:'chapter 3',image:'assets/imgs/chapter3.jpg'},
-  		{title:'chapter 4',image:'assets/imgs/chapter4.jpg'},
-  		{title:'chapter 5',image:'assets/imgs/chapter5.jpg'}
+  		{title:'Time and Management',image:'assets/imgs/chapter1.jpg',index:0},
+  		{title:'Planning and prioritizing',image:'assets/imgs/chapter2.jpg',index:1},
+  		{title:'Procrastination',image:'assets/imgs/chapter3.jpg',index:2},
+  		{title:'Goals',image:'assets/imgs/chapter4.jpg',index:3},
+  		{title:'Endless Motivation',image:'assets/imgs/chapter5.jpg',index:4}
 
   	];
   }

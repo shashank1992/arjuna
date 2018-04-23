@@ -1,4 +1,11 @@
 page-learning-path {
+
+ ion-card {
+    position: relative;
+    text-align: center;
+    cursor:pointer;
+  }
+
 .card-background-page{
 	ion-card {
     position: relative;
@@ -8,18 +15,18 @@ page-learning-path {
   .card-title {
     position: absolute;
     top: 36%;
-    font-size: 2.0em;
+    font-size: 1em;
     width: 100%;
     font-weight: bold;
-    color: #fff;
+    color: #71091f;
   }
 
   .card-subtitle {
-    font-size: 1.0em;
+    font-size: 0.8em;
     position: absolute;
     top: 52%;
     width: 100%;
-    color: #fff;
+    color: black;
   }
 }
 }

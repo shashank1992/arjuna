@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Chapter {{item.title}} </ion-title>
+    <ion-title>{{item.index + 1}} {{item.title}} </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,9 +17,14 @@
   <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.image + ')'">
   </div>
 
-  <div class="item-detail" padding>
-    <h2></h2>
-    <p>Will load soon</p>
+  <div class="item-detail" no-padding>
+    <ion-card>
+    	<ion-card-content>
+    {{chapters[item.index]}}
+	</ion-card-content>
+    </ion-card>
   </div>
-  <button ion-button full (click)="openItem(item)"> Take Quiz</button>
+ 
+ <button ion-button full (click)="openItem(item)"> Take Quiz</button>
 </ion-content>
+ 
