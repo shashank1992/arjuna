@@ -10,4 +10,7 @@ import { LearningPathPage } from './learning-path';
     IonicPageModule.forChild(LearningPathPage),
   ],
 })
-export class LearningPathPageModule {}
+export class LearningPathPageModule {
+
+	
+}

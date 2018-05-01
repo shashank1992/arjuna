@@ -13,6 +13,25 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content no-padding>
+	<ion-slides >
+		<ion-slide	*ngFor="let item of quiz_questions; let i = index">
+			<ion-list>
+			  <button ion-item  (click)="itemSelected(item.a,i)">
+			    {{ item.a}}
+			  </button> 
+			  <button ion-item  (click)="itemSelected(item.b,i)">
+			    {{ item.b}}
+			  </button>  
+			  <button ion-item (click)="itemSelected(item.c,i)">
+			    {{ item.c}}			    
+			  </button> 
+			  <button ion-item  (click)="itemSelected(item.d,i)">
+			    {{ item.d}}s
+			  </button> 
+			</ion-list>
+		</ion-slide>
+	</ion-slides>
 
 </ion-content>
+	
